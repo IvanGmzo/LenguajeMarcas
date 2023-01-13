@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki de animales</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color: blue; font-size: 40px">WIKI: TIPOS DE ANIMALES</h1>
+    <p style="margin: 40px;"> En la clasificación científica de los <b>seres vivos</b>, los animales constituyen un 
+        reino que reúne un amplio grupo de organismos. Están divididos principalmente
+        en dos tipos, 
+        <a href="vertebrados.html" target="_blank">vertebrados</a> e
+        <a href="invertebrados.html" target="_blank">invertebrados</a>.
+    </p>
+    <div class="division">
+        <h2 class="cacahuete">Loro</h2>
+        <h2 class="bird">Gallo</h2>
+        <h2 class="bird">Perro</h2>
+        <p>Buenas tardes</p>
+    </div>
+    <button>Enviar</button>
+    <p style="margin: 40px;">Aqui tenemos algunos animales:</p>
+    <br>
+    <table style="width: 100%" border="">
+        <tr>
+            <th>Animales</th>
+            <th>Foto</th>
+        </tr>
+        <tr>
+            <td>Delfin</td>
+            <td><img src="delfin.jpg" alt="delfin" width="960" height="540"></td>
+        </tr>
+        <tr>
+            <td>Mosca</td>
+            <td><img src="mosca.jpg" alt="mosca" width="960" height="540"></td>
+        </tr>
+        <tr>
+            <td>Rana</td>
+            <td><img src="rana.jpg" alt="rana" width="960" height="540"></td>
+        </tr>
+    </table>
+    <br>
+    <label for="valoracion">Video informativo: </label>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RDUjqgMTSAI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <br>
+    <form action="https://httpbin.org/get" method="get">
+        <label for="valoracion">Recomendaciones para mejorar la página: </label>
+        <input type="text" id="valoracion" size="50" maxlength="120" name="valoracion">
+        <input type="submit" value="Enviar">
+        <br>
+        <label for="Correo">Correo electrónico de contacto: </label>
+        <input type="email" name="email" placeholder="username@email.com">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+body {
+    background-image:url(fondocarta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+  }
+  .carta{
+    padding: 70px;
+  }
+  .carta h1{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+  }
+  .carta p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+  }

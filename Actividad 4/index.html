@@ -1,0 +1,479 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'sans': ["Inter"],
+                    'serif': ["Lexend"],
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="flex justify-center items-center mb-20">
+        <div class="flex flex-row xl:gap-96 lg:gap-72 sm:gap-40 gap-20 w-max p-4 mt-4 items-center font-sans">
+
+            <div class="flex justify-start items-center text-slate-500 space-x-10 ">
+                <img src="images/Logo.png" alt="">
+                <h1 class="hidden xl:flex">Features</h1>
+                <h1 class="hidden xl:flex">Testimonials</h1>
+                <h1 class="hidden xl:flex">Pricing</h1>
+            </div>
+            <div class="flex flex-row justify-center items-center flex-nowrap gap-4">
+                <a href="#" class="mr-4 hidden lg:flex">Sign in</a>
+                <a href="#" class="rounded-full bg-blue-600 text-white p-2 ">Get started today</a>
+                <a class="lg:hidden" href="#"><img src="images/Menu.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <section class="flex flex-col p-10">
+        <div class="flex flex-col gap-56 items-center">
+            <div class="flex flex-col gap-6 max-w-[810px]">
+                <h1 class="text-6xl font-serif text-center">Accounting <samp class="text-blue-600 font-serif">made
+                        simple</samp>
+                    for small businesses.
+                </h1>
+                <h2 class=" font-sans text-center">Most bookkeeping software is accurate, but hard to use. We make
+                    the
+                    opposite
+                    trade-off, and hope you don't get audited.</h2>
+                <div class="flex flex-row gap-4 justify-center">
+                    <a href="#" class="rounded-full bg-black text-white p-2 flex items-center font-sans">Get 6 months
+                        free</a>
+                    <a href="#"
+                        class="rounded-full border-2 border-slate-400 bg-white text-slate-400 p-2 flex flex-row gap-2 items-center font-sans">
+                        <img class="w-[20px] h-[20px]" src="images/pngwing.com (4).png" alt="">
+                        Watch video</a>
+
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-y-10">
+                <h1>Trusted by these six companies so far</h1>
+                <div class="flex flex-row flex-wrap gap-x-6 items-center justify-center">
+                    <img src="images/laravel.png" alt="">
+                    <img src="images/mirage.png" alt="">
+                    <img src="images/statamic.png" alt="">
+                    <img src="images/statickit.png" alt="">
+                    <img src="images/transistor.png" alt="">
+                    <img src="images/tuple.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[url('images/background.png')] h-[1146px] overflow-y-hidden bg-no-repeat bg-cover mt-32 ">
+        <div class="xl:mt-20">
+            <div class="flex flex-col items-center p-8">
+                <h1 class="font-serif text-4xl text-center text-slate-50">Everything you need to run your books</h1>
+                <h2 class="font-serif text-m text-center mt-10 text-slate-50">Well everything you need if you aren't
+                    that
+                    picky
+                    about minor
+                    details
+                    like tax compliance.</h2>
+            </div>
+            <div class="flex flex-col xl:flex-row flex-nowrap xl:mt-20 overflow-hidden">
+                <div class="flex flex-col xl:mt-32 xl:pl-32 lg:max-w-[493px]items-center p-4 mr-0">
+                    <div
+                        class="flex flex-col xl:w-[493px] p-4 rounded-md border-2 border-transparent hover:border-2 hover:bg-slate-200/[0.1] hover:border-white ">
+                        <h3 class="text-xl text-slate-50 font-serif">Payroll</h3>
+                        <h4 class="text-s text-slate-50 font-sans mt-4">Keep track of everyone's salaries and whether or
+                            not
+                            they've been paid. Direct deposit not supported.</h4>
+                    </div>
+                    <div
+                        class="flex flex-col xl:w-[493px] p-4 rounded-md border-2 border-transparent hover:border-2 hover:bg-slate-200/[0.1] hover:border-white">
+                        <h3 class="text-xl text-slate-50 font-serif">Claim expenses</h3>
+                        <h4 class="text-s text-slate-50 font-sans mt-4">All of your receipts organized into one place,
+                            as
+                            long as you don't mind typing in the data by hand.</h4>
+                    </div>
+                    <div
+                        class="flex flex-col xl:w-[493px] p-4 rounded-md border-2 border-transparent hover:border-2 hover:bg-slate-200/[0.1] hover:border-white">
+                        <h3 class="text-xl text-slate-50 font-serif">VAT handling</h3>
+                        <h4 class="text-s text-slate-50 font-sans mt-4">We only sell our software to companies who don't
+                            deal with VAT at all, so technically we do all the VAT stuff they need.</h4>
+                    </div>
+                    <div
+                        class="flex flex-col xl:w-[493px] p-4 rounded-md border-2 border-transparent hover:border-2 hover:bg-slate-200/[0.1] hover:border-white">
+                        <h3 class="text-xl text-slate-50 font-serif">Reporting</h3>
+                        <h4 class="text-s text-slate-50 font-sans mt-4">Easily export your data into an Excel
+                            spreadsheet
+                            where you can do whatever the hell you want with</h4>
+                    </div>
+                </div>
+                <img class="xl:ml-[-30px]" src="images/Screenshot.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex flex-col items-center xl:p-36 p-4 gap-20">
+            <div class="max-w-[606px]">
+                <h1 class="font-serif text-4xl text-center">Simplify everyday business tasks.</h1>
+                <h3 class="font-sans text-l text-gray-600 text-center mt-10 ">Because you'd probably be a little
+                    confused if we
+                    suggested
+                    you complicate your
+                    everyday business tasks instead.</h3>
+            </div>
+            <div class="flex flex-col xl:flex-row mt-10 gap-4">
+                <div class="flex flex-col p-2 gap-2">
+                    <div class="group">
+                        <img class="w-[37px] h-[37px] grayscale group-hover:grayscale-0" src="images/reporting.png"
+                            alt="">
+                        <h4 class="font-sans text-gray-400 mt-10 group-hover:text-blue-700">Reporting</h4>
+                    </div>
+                    <h2 class="font-serif">Stay on top of things with always up-to-date reporting features.
+                    </h2>
+                    <h3 class="font-sans text-gray-600">We talked about reporting in the section above but we needed
+                        three items here,
+                        so mentioning it one more time for posterity..</h3>
+                </div>
+                <div class="flex flex-col p-2 gap-2">
+                    <div class="group">
+                        <img class="w-[37px] h-[37px] grayscale group-hover:grayscale-0" src="images/inventory.png"
+                            alt="">
+                        <h4 class="font-sans text-gray-400 mt-10 group-hover:text-blue-700">Inventory</h4>
+                    </div>
+                    <h2 class="font-serif">Never lose track of what's in stock with accurate inventory tracking.
+                    </h2>
+                    <h3 class="font-sans text-gray-600">We don't offer this as part of our software but that statement
+                        is inarguably
+                        true. Accurate inventory tracking would help you for sure.</h3>
+                </div>
+                <div class="flex flex-col p-2 gap-2">
+                    <div class="group">
+                        <img class="w-[37px] h-[37px] grayscale group-hover:grayscale-0" src="images/contacts.png"
+                            alt="">
+                        <h4 class="font-sans text-gray-400 mt-10 group-hover:text-blue-700">Contacts</h4>
+                    </div>
+                    <h2 class="font-serif">Organize all of your contacts, service providers, and invoices in one place.
+                    </h2>
+                    <h3 class="font-sans text-gray-600">This also isn't actually a feature, it's just some friendly
+                        advice. We definitely recommend that you do this, you'll feel really organized and professional.
+                    </h3>
+                </div>
+            </div>
+            <div class="xl:bg-slate-200 xl:rounded-3xl xl:p-20">
+                <img src="images/profit-loss.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="bg-[url('images/background-features.png')] h-[456px] overflow-y-hidden bg-no-repeat bg-cover mt-32">
+        <div class="flex flex-col items-center xl:p-32 mt-32 lg:mt-0 gap-14">
+            <div class="flex flex-col flex-wrap max-w-[500px] gap-10">
+                <h1 class="font-serif text-4xl text-center text-white">Get started today</h1>
+                <h2 class="font-sans text-center text-white">It's time to take control of your books. Buy our software
+                    so
+                    you can feel
+                    like you're doing something productive.</h2>
+            </div>
+            <a href="#" class="rounded-full bg-white text-black p-2 flex items-center font-sans font-semibold">Get 6
+                months free</a>
+        </div>
+    </section>
+    <section class="flex flex-col items-center  xl:p-32 p-4 gap-20">
+        <div class="flex flex-col max-w-[640px] gap-10">
+            <h1 class="font-serif text-4xl text-center">Loved by businesses worldwide.</h1>
+            <h2 class="font-sans text-center">Our software is so simple that people can't help but fall in love
+                with it. Simplicity is easy when you just skip tons of mission-critical features.</h2>
+        </div>
+        <div class="gap-7 sm:columns-1 md:columns-2 lg:columns-3">
+            <div class="flex flex-col w-[370px] gap-10 rounded-2xl shadow-lg p-4">
+                <h3 class="font-sans leading-loose">TaxPal is so easy to use I can't help but wonder if it's really
+                    doing the things
+                    the government
+                    expects me to do.</h3>
+                <div class="flex flex-row gap-28">
+                    <div class="flex flex-col">
+                        <h2 class="font-serif">Sheryl Berge</h2>
+                        <h2 class="font-sans text-gray-400">CEO at Lynch LLC</h2>
+                    </div>
+                    <img src="images/avatar-1.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col w-[370px] gap-10 rounded-2xl shadow-lg p-4">
+                <h3 class="font-sans leading-loose">The best part about TaxPal is every time I pay my employees, my bank
+                    balance
+                    doesn't go down like it used to. Looking forward to spending this extra cash when I figure out why
+                    my card is being declined.</h3>
+                <div class="flex flex-row gap-28">
+                    <div class="flex flex-col">
+                        <h2 class="font-serif">Sheryl Berge</h2>
+                        <h2 class="font-sans text-gray-400">CEO at Lynch LLC</h2>
+                    </div>
+                    <img src="images/avatar-1.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col w-[370px] gap-10 rounded-2xl shadow-lg p-4">
+                <h3 class="font-sans leading-loose">I used to have to remit tax to the EU and with TaxPal I somehow
+                    don't have to do
+                    that anymore. Nervous to travel there now though.
+                </h3>
+                <div class="flex flex-row gap-28">
+                    <div class="flex flex-col">
+                        <h2 class="font-serif">Sheryl Berge</h2>
+                        <h2 class="font-sans text-gray-400">CEO at Lynch LLC</h2>
+                    </div>
+                    <img src="images/avatar-1.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col w-[370px] gap-10 rounded-2xl shadow-lg p-4">
+                <h3 class="font-sans leading-loose">TaxPal is so easy to use I can't help but wonder if it's really
+                    doing the things
+                    the government
+                    expects me to do.</h3>
+                <div class="flex flex-row gap-28">
+                    <div class="flex flex-col">
+                        <h2 class="font-serif">Sheryl Berge</h2>
+                        <h2 class="font-sans text-gray-400">CEO at Lynch LLC</h2>
+                    </div>
+                    <img src="images/avatar-1.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col w-[370px] gap-10 rounded-2xl shadow-lg p-4">
+                <h3 class="font-sans leading-loose">The best part about TaxPal is every time I pay my employees, my bank
+                    balance
+                    doesn't go down like it used to. Looking forward to spending this extra cash when I figure out why
+                    my card is being declined.</h3>
+                <div class="flex flex-row gap-28">
+                    <div class="flex flex-col">
+                        <h2 class="font-serif">Sheryl Berge</h2>
+                        <h2 class="font-sans text-gray-400">CEO at Lynch LLC</h2>
+                    </div>
+                    <img src="images/avatar-1.png" alt="">
+                </div>
+            </div>
+            <div class="flex flex-col w-[370px] gap-10 rounded-2xl shadow-lg p-4">
+                <h3 class="font-sans leading-loose">I used to have to remit tax to the EU and with TaxPal I somehow
+                    don't have to do
+                    that anymore. Nervous to travel there now though.
+                </h3>
+                <div class="flex flex-row gap-28">
+                    <div class="flex flex-col">
+                        <h2 class="font-serif">Sheryl Berge</h2>
+                        <h2 class="font-sans text-gray-400">CEO at Lynch LLC</h2>
+                    </div>
+                    <img src="images/avatar-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-col xl:p-32 p-8 bg-slate-900 gap-20">
+        <div class="flex flex-col items-center gap-8">
+            <h1 class="font-serif text-4xl text-center text-white">Simple pricing, for everyone.</h1>
+            <h2 class="font-sans text-center text-gray-400">It doesn't matter what size your business is, our software
+                won't work well for you.
+            </h2>
+        </div>
+        <div class="flex flex-col xl:flex-row items-center justify-center gap-10">
+            <div class="flex flex-col gap-10 p-10 rounded-2xl hover:bg-blue-700 p-4 w-[370px]">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-white font-serif text-4xl">$9</h1>
+                    <h2 class="text-white font-serif">Starter</h2>
+                    <h3 class="text-gray-400 font-sans">Good for anyone who is self-employed and just getting started.
+                    </h3>
+                    <a href="#"
+                        class="rounded-full bg-white text-black p-2 flex justify-center font-sans font-semibold">Get 6
+                        months free</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-10 p-10 rounded-2xl hover:bg-blue-700 p-4 w-[370px]">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-white font-serif text-4xl">$9</h1>
+                    <h2 class="text-white font-serif">Starter</h2>
+                    <h3 class="text-gray-400 font-sans">Good for anyone who is self-employed and just getting started.
+                    </h3>
+                    <a href="#"
+                        class="rounded-full bg-white text-black p-2 flex justify-center font-sans font-semibold">Get 6
+                        months free</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-10 p-10 rounded-2xl hover:bg-blue-700 p-4 w-[370px]">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-white font-serif text-4xl">$9</h1>
+                    <h2 class="text-white font-serif">Starter</h2>
+                    <h3 class="text-gray-400 font-sans">Good for anyone who is self-employed and just getting started.
+                    </h3>
+                    <a href="#"
+                        class="rounded-full bg-white text-black p-2 flex justify-center font-sans font-semibold">Get 6
+                        months free</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                    <div class="flex flex-row gap-2">
+                        <img src="images/check-circle.png" alt="">
+                        <h3 class="text-white font-sans">Send 10 quotes and invoices</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="bg-[url('images/background-faqs.png')] min-h-[1278px] overflow-y-hidden bg-no-repeat bg-cover xl:p-32 p-4 flex justify-center">
+        <div class="flex flex-col gap-20 max-w-[1177px] ">
+            <div class="flex flex-col flex-wrap gap-4 max-w-[640px]">
+                <h1 class="font-serif text-4xl">Frequently asked questions</h1>
+                <h2 class="font-sans text-gray-600">If you can't find what you're looking for, email our support team
+                    and if
+                    you're lucky someone will get back to you.</h2>
+            </div>
+            <div class="flex justify-center">
+                <div class="grid gap-4 grid-cols-1 xl:grid-cols-3 max-w-[1177px]">
+                    <div class="flex flex-col gap-4 max-w-[367px]">
+                        <h1 class="font-serif font-semibold">Does TaxPal handle VAT?</h1>
+                        <h2 class="font-sans">Well no, but if you move your company offshore you can probably ignore it.
+                        </h2>
+                    </div>
+                    <div class="flex flex-col gap-4 max-w-[367px]">
+                        <h1 class="font-serif font-semibold">What was that testimonial about tax fraud all about?</h1>
+                        <h2 class="font-sans">TaxPal is just a software application, ultimately your books are your
+                            responsibility.</h2>
+                    </div>
+                    <div class="flex flex-col gap-4 max-w-[367px]">
+                        <h1 class="font-serif font-semibold">How do you generate reports?</h1>
+                        <h2 class="font-sans">You just tell us what data you need a report for, and we get our kids to
+                            create
+                            beautiful charts for you using only the finest crayons.</h2>
+                    </div>
+                    <div class="flex flex-col gap-4 max-w-[367px]">
+                        <h1 class="font-serif font-semibold">Can I pay for my subscription via purchase order?</h1>
+                        <h2 class="font-sans">Absolutely, we are happy to take your money in all forms.
+                        </h2>
+                    </div>
+                    <div class="flex flex-col gap-4 max-w-[367px]">
+                        <h1 class="font-serif font-semibold">TaxPal sounds horrible but why do I still feel compelled to
+                            purchase?
+                        </h1>
+                        <h2 class="font-sans">This is the power of excellent visual design. You just can't resist it, no
+                            matter how poorly it actually functions.</h2>
+                    </div>
+                    <div class="flex flex-col gap-4 max-w-[367px]">
+                        <h1 class="font-serif font-semibold">Can we expect more inventory features?</h1>
+                        <h2 class="font-sans">In life it's really better to never expect anything at all.</h2>
+                    </div>
+                    <div class="flex flex-col gap-4 max-w-[367px]">
+                        <h1 class="font-serif font-semibold">How do I apply for a job at TaxPal?</h1>
+                        <h2 class="font-sans">We only hire our customers, so subscribe for a minimum of 6 months and
+                            then let's talk.
+                        </h2>
+                    </div>
+                    <div class="flex flex-col gap-4 max-w-[367px]">
+                        <h1 class="font-serif font-semibold">I found other companies called TaxPal, are you sure you can
+                            use this
+                            name?</h1>
+                        <h2 class="font-sans">Honestly not sure at all. We haven't actually incorporated or anything, we
+                            just thought it sounded cool and made this website.</h2>
+                    </div>
+                    <div class="flex flex-col gap-4 max-w-[367px]">
+                        <h1 class="font-serif font-semibold">I lost my password, how do I get into my account?</h1>
+                        <h2 class="font-sans">Send us an email and we will send you a copy of our latest password
+                            spreadsheet so you can find your information.</h2>
+                    </div>
+                </div>
+            </div>
+            <footer class="flex flex-col gap-14 mt-48">
+                <div class="flex flex-col gap-10 items-center">
+                    <img class="w-[108.78px] h-[40px]" src="images/Logo.png" alt="">
+                    <div class="flex flex-row gap-10">
+                        <h1 class="font-sans text-gray-400">Features</h1>
+                        <h1 class="font-sans text-gray-400">Testimonials</h1>
+                        <h1 class="font-sans text-gray-400">Pricing</h1>
+                    </div>
+                </div>
+                <div class="bg-gray-300 h-1 bg-cover">
+
+                </div>
+                <div class="flex flex-row gap-28 justify-center">
+                    <h1 class="flex  font-sans text-gray-600">Copyright © 2022 TaxPal. All rights
+                        reserved.
+                    </h1>
+                    <img class="hidden lg:flex justify-end" src="images/Socails.png" alt="">
+                </div>
+            </footer>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("imagenes/descarga.jfif");
+  backdrop-filter: blur(10px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  width: 100%;
+  margin: 0px auto;
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 1, 66, 0.3);
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: x-small;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo {
+  object-fit: contain;
+  display: flex;
+  justify-content: flex-start;
+}
+.logo img {
+  height: 40px;
+  width: 60px;
+  object-fit: contain;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 7px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.main-search {
+  position: relative;
+  margin-top: 6px;
+}
+.main-search input {
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid black;
+  background: transparent;
+}
+.main-search button {
+  position: absolute;
+  right: 0px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.main-search img {
+  border: 1px solid black;
+  border-right: 30px;
+  border-bottom: 20px;
+  border-top: 20px;
+  height: 22px;
+  width: 22px;
+  padding: 9px;
+}
+.intro {
+  text-align: center;
+  height: fit-content;
+  width: 100%;
+  color: black;
+}
+.intro h2 {
+  color: rgb(165, 97, 42);
+  font-size: 20px;
+  font-family: "Francois One", sans-serif;
+  margin-top: 70px;
+}
+.intro h1 {
+  color: brown;
+  font-size: 50px;
+  font-family: "Francois One", sans-serif;
+}
+.intro p {
+  color: rgb(165, 112, 42);
+  font-size: large;
+  font-family: "Francois One", sans-serif;
+  margin-bottom: 70px;
+}
+.intro a {
+  display: inline;
+  background-color: bisque;
+  border-style: solid;
+  border-color: brown;
+  color: rgb(165, 97, 42);
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 20px;
+}
+.galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 70px;
+  padding: 50px;
+}
+.galeria img {
+  width: 230px;
+  height: auto;
+  border-radius: 20px;
+}
+footer {
+  display: block;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+}
+footer h2 {
+  padding-top: 20px;
+  font-size: medium;
+  color: lightgrey;
+  text-align: center;
+  border-top: solid;
+  border-color: lightgray;
+}
+.logofooter {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.logofooter img {
+  height: 100px;
+  width: auto;
+  align-self: center;
+}
+footer .nav {
+  font-size: x-small;
+  align-self: center;
+}
+.footerlink {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+.footerlink img {
+  padding: 10px;
+  background-color: rgba(211, 211, 211, 0.671);
+  border-radius: 20px;
+  height: 30px;
+  width: auto;
+}
